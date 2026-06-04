@@ -1,0 +1,6 @@
+{
+  "name": "Ichibankuji Dream Simulator",
+  "description": "A realistic 80-ticket Ichibankuji lottery simulator with player turn-swapping, salesclerk interactions, and probability tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

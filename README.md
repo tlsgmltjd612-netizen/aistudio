@@ -1,11 +1,61 @@
-<div align="center">
+# 🔮 주술회전 5주년 FINAL 제일복권(쿠지) 시뮬레이션
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+> **"지진과 몰락 속에 피어나는 최고의 피규어를 향한 주력의 전투!"**  
+> GitHub 업로드 및 Vercel 원클릭 배포가 완전히 호환되도록 설계된 한글 특화 제일복권(Ichiban Kuji) 웹 시뮬레이터입니다.
 
-  <h1>Built with AI Studio</h2>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+---
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🎨 주요 구현 핵심 (Core Features)
 
-</div>
+1. **실제 쿠지 규칙 준수 (70장 풀 테이블)**
+   - 피규어 총 3종 (A/B/C상 각 2개씩 총 6개 완비)
+   - 하위 굿즈 테이블 (D, E, F, G상 완벽 구성)
+   - 마지막 장을 구매하면 자동 획득하는 **라스트원(LastOne) 고죠 사토루 피규어** 시스템 작동!
+2. **반응형 명품 드로잉 & 벡터 일러스트레이션 (Images/Illustrations)**
+   - Gemini 이미지 쿼타 제한을 뛰어넘어, 피규어마다 특수한 저주 이펙트(A상 참격 주력, B상 무량공처 시공 붕괴, C상 주령 조술)를 표현한 **독립형 고성능 벡터 SVG 쇼케이스**를 자체 구현했습니다.
+   - 쿠지판의 복원 불가능한 수많은 티켓들은 아날로그 영수증의 '뜯는 선(Tear Here)' 디테일과 뜯겨나간 한글 복권 종이 질감을 세련되게 모방하여 제작되었습니다.
+3. **지능형 다인 호구 시스템 (Multi-User Battle)**
+   - 내 차례 뿐만 아니라 주변에서 지켜보며 피규어 남은 것을 가로채려 웅성거리는 주위 인물 3인이 실시간으로 경쟁을 벌입니다.
+4. **포기 방지 주술적 가일트 트립 (Dodge & Ancestor Warn)**
+   - 돈을 한참 쓰고 피규어를 뽑지 못한 채 도망가려 하면, '포기' 버튼이 주위에서 도망다니며 회피 게임을 시전합니다.
+   - 마침내 침몰 시조상님👴🏻과 여자친구👩🏻‍💼가 나타나 "이대로 그만두면 지옥/이별 사유란다..." 라며 강력한 불효죄와 연애 파국 심리 공격을 선사합니다.
+5. **실제 소비지출 대안 비교 (Fintech Parody)**
+   - 쓴 지출(₩13,000 기준)이 증가할 때마다 "이 돈이면 치킨 몇 마리, 국밥 몇 그릇, 삼각김밥 몇 개"인지를 리얼타임으로 뼈를 때리는 금융 영수증 레이아웃이 실시간 갱신됩니다.
+
+---
+
+## 🚀 GitHub 및 Vercel 배포 방법 (How to Deploy)
+
+이 저장소는 어떠한 서버 환경이나 복잡한 데이터베이스 설치가 불필요한 **React + Vite 데스크톱 전용 SPA(Single Page Application)** 입니다.
+
+### Step 1: GitHub에 레포지토리 저장
+1. AI Studio 우측 상단의 설정(Settings) 메뉴에서 **"Export to GitHub"**를 누르거나 로컬 소스 코드를 본인의 깃허브 계정에 푸시(Push)하세요.
+
+### Step 2: Vercel에서 즉시 배포
+1. [Vercel 대시보드](https://vercel.com/)에 로그인합니다.
+2. **Add New > Project**를 누릅니다.
+3. 방금 저장한 GitHub 레포지토리를 불러옵니다(Import).
+4. 프레임워크 프리셋으로 **Vite** 혹은 **Other**가 자동으로 완성됩니다.
+5. `vercel.json`에 기재된 라우팅 설정이 자동 흡수되므로 별도 옵션 설정 필요 없이 **Deploy** 버튼만 클릭하면 10초 만에 아름다운 한글 랜딩페이지가 전 세계에 무료 활성화됩니다!
+
+---
+
+## 💻 로컬 개발 환경 개발 방법 (Local Development)
+
+패키지를 다운로드한 뒤, 로컬에서 실행하고 싶다면 아래 명령어를 순서대로 입력하세요.
+
+```bash
+# 1. 의존성 패키지 설치
+npm install
+
+# 2. 로컬 테스트 서버 구동 (포트 3000)
+npm run dev
+```
+
+배포용 정적 빌드 파일 생성:
+```bash
+npm run build
+```
+빌드 파일들은 `/dist` 폴더 안에 정식 패킹됩니다.
